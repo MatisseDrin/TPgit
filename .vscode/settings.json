@@ -3,6 +3,10 @@
         "."
     ],
     "java.project.referencedLibraries": [
+<<<<<<< HEAD:.vscode/settings.json
         "/home/utilisateur/Téléchargements/MG2D_2.9/MG2D.jar"
+=======
+        "/home/matisse/cours/java/mg2d/MG2D_2.9/MG2D.jar"
+>>>>>>> favalier:projet_echec_exceptions/.vscode/settings.json
     ]
 }
