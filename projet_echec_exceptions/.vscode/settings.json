@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "/home/matisse/cours/java/mg2d/MG2D_2.9/MG2D.jar"
+    ]
+}

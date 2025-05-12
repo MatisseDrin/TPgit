@@ -15,8 +15,10 @@ class Plateau{
 	this.ajouterPiece(new Tour('B', new Position("H1")));
 
 	for(char c = 'A'; c < 'I' ; c++){
-	    this.ajouterPiece(new PionBlanc(new Position(c+"2")));
-	    this.ajouterPiece(new PionNoir(new Position(c+"7")));
+		if (c != 'D' && c != 'E') {
+			this.ajouterPiece(new PionBlanc(new Position(c+"2")));
+			this.ajouterPiece(new PionNoir(new Position(c+"7")));
+		}
 	    }
 
 	this.ajouterPiece(new Tour('N', new Position("A8")));
@@ -27,6 +29,10 @@ class Plateau{
 	this.ajouterPiece(new Fou('N', new Position("F8")));
 	this.ajouterPiece(new Cavalier('N', new Position("G8")));
 	this.ajouterPiece(new Tour('N', new Position("H8")));
+	this.ajouterPiece(new Favalier('N', new Position("D7")));
+	this.ajouterPiece(new Favalier('N', new Position("E7")));
+	this.ajouterPiece(new Favalier('B', new Position("D2")));
+	this.ajouterPiece(new Favalier('B', new Position("E2")));
     }
 
 
