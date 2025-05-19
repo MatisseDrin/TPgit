@@ -76,7 +76,14 @@ try {
     }
     
     public static void main(String[] args) throws ErreurCoordonneesException, ErreurDeplacementException, CouleurPieceException, CaseOccupeeException{
-	Plateau p = new Plateau();
+	boolean cheat = false;
+
+	if(args.length > 0){
+	    if(args[0].equals("cheat"))
+		cheat = true;
+	}
+	
+	Plateau p = new Plateau(cheat);
 	Fenetre f = new Fenetre("Jeu d'échecs", 8*MainGraphique.tailleCase, 10*MainGraphique.tailleCase);
 	Souris souris = f.getSouris();
 	char couleurQuiJoue = 'B';

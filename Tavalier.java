@@ -12,7 +12,7 @@ class Tavalier extends Piece{
 
 
     public String getType(){
-    	return new String("tour");
+    	return new String("tavalier");
     }
     
 
